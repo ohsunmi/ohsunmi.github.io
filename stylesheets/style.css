@@ -1,3 +1,96 @@
-body {
+/******************************** GENERAL STYLES ********************************/
 
+@font-face {
+	font-family: 'Tuffy'; 
+		src:url('../fonts/Tuffy/Tuffy.ttf') format('truetype');				
+}
+@font-face {
+	font-family: 'Tuffy_Bold'; 
+		src: url('../fonts/Tuffy/Tuffy_Bold.ttf') format('truetype');
+}
+
+
+body {
+	text-align: center;
+	font-family: 'Tuffy', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+}
+
+nav li {
+	float: right;
+	padding: 30px;
+}
+
+nav li a:hover {
+	border-bottom: 2px solid #000000;
+}
+
+#main {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+#home {
+	clear: both;
+	height: 400px;
+}
+
+.wrapper {
+	padding: 120px;
+}
+
+/******************************** WORK ********************************/
+
+.work_container {
+	padding-top: 100px;
+}
+
+.work_box {
+	background-color: green;
+	width: 300px;
+	height: 160px;
+	margin: 5px;
+	float: left;
+}
+
+.work_box img {
+	border: 1px solid #C9C9C9;
+}
+
+/******************************** ABOUT ********************************/
+
+#about {
+	height: 400px;
+	clear: both;
+}
+
+#about_container {
+	padding: 200px 100px; 
+}
+
+/******************************** CONTACT ********************************/
+
+#contact {
+	height: 350px;
+	clear: both;
+}
+
+#contact_container {
+	padding: 150px 0; 
 }
