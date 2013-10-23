@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>	
+	<title>Sunmi Oh | Front-End Web Developer</title>
 	<meta charset="utf-8">
-	<title>Sunmi Oh</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Sunmi Oh is a Front-End Web Developer with a keen eye for detail.">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46305342-1', 'sunmioh.com');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
-	<div>Hello you</div>
+
+	<header>
+		<nav>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</nav>
+	</header>
+
+	<section id="home">
+		<div class="intro">
+			<h1>Sunmi Oh</h1>
+			<p>Front-End Web Developer</p>
+		</div>
+		<div id="intro-photo">
+			<p>photo</p>
+		</div>
+		<div id="arrow">
+			<a href="#work"><i class="fa fa-chevron-down fa-3x"></i></a>
+		</div>
+	</section>
+
+	<section id="work">
+		<div id="work-container">
+			
+			<div class="work-item clearfix">
+				<a href="http://mdsolarsciences.com/" target="_blank">
+					<div class="photo">
+						<img class="box-shadow" src="assets/MDSS.png">
+					</div>
+					<div class="reveal" style="background-image:url('assets/MDSS5.png');">
+						<div class="info">
+							<div class="info-inner">
+								<h2>MD Solar Sciences</h2>
+								<p>Doctor-developed Skin Care</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="work-item clearfix">
+				<a href="http://nanoosh.com/" target="_blank">
+					<div class="photo">
+						<img class="box-shadow" src="assets/Nanoosh.png">
+					</div>
+					<div class="reveal" style="background-image:url('assets/Nanoosh4.png');">
+						<div class="info">
+							<div class="info-inner">
+								<h2>Nanoosh</h2>
+								<p>Mediterranean Fast Casual</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="work-item clearfix">
+				<a href="http://coconuts.nyc/" target="_blank">
+					<div class="photo">
+						<img class="box-shadow" src="assets/CoCoCo.png">
+					</div>
+					<div class="reveal" style="background-image:url('assets/CoCoCo1.png');">
+						<div class="info">
+							<div class="info-inner">
+								<h2>CoCo&amp;Co</h2>
+								<p>Brooklyn-based Coconut Carts</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="work-item clearfix">
+				<a href="http://symphonized.com/" target="_blank">
+					<div class="photo">
+						<img class="box-shadow" src="assets/Symphonized.png">
+					</div>
+					<div class="reveal" style="background-image:url('assets/Symphonized4.png');">
+						<div class="info">
+							<div class="info-inner">
+								<h2>Symphonized</h2>
+								<p>Handcrafted Wood Headphones</p>
+							</div>
+						</div>					
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</section>
+
+	<footer id="contact">
+		<div id="contact-container">
+			<div id="icons">
+				<li><a href="https://www.linkedin.com/in/sunmioh" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/ohsunmi" target="_blank"><i class="fa fa-github"></i></a></li>
+				<li><a title="ohsun14@gmail.com" href="mailto:ohsun14@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+			</div>
+		</div>
+	</footer>
+
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/jquery_easing.js"></script>
+  <script src="javascripts/scripts.js"></script>
+
 </body>
 </html>
