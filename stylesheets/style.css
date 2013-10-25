@@ -11,6 +11,12 @@
 
 
 body {
+	margin-top: 60px;
+	background: url('../images/candy.jpg') no-repeat center fixed;
+/*		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;*/
 	text-align: center;
 	font-family: 'Tuffy', sans-serif;
 }
@@ -49,6 +55,12 @@ nav li a:hover {
 #home {
 	clear: both;
 	height: 400px;
+  color: black;
+  text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
 }
 
 .wrapper {
@@ -58,7 +70,7 @@ nav li a:hover {
 /******************************** WORK ********************************/
 
 .work_container {
-	padding-top: 100px;
+	padding-top: 250px;
 }
 
 .work_box {
