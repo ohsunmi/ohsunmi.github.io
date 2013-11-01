@@ -7,7 +7,7 @@ $(document).ready(function() {
   function parallax() {
     var scrolled = $(window).scrollTop();
     // Home
-    $('#bg').css('top', -(scrolled * 2) + 'px');
+    // $('#bg').css('top', -(scrolled * 2) + 'px');
     $('.intro').css('top', (scrolled / 5) + 'px');
     // Photo Site
     $('#image_a').css('top', (scrolled / 5) + 'px');
@@ -16,8 +16,8 @@ $(document).ready(function() {
     $('#image_c').css('top', (scrolled / 8) + 'px');
     $('#image_d').css('top', -(scrolled * 0.05) + 'px');
     // Retwitr
-    $('#image_e').css('top', (scrolled / 15) + 'px');
-    $('#image_f').css('top', -(scrolled * 0.01) + 'px');
+    $('#image_e').css('top', (scrolled / 40) + 'px');
+    $('#image_f').css('top', -(scrolled  * 0.04) + 'px');
   }
 
   $(function() {
