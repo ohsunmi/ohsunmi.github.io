@@ -1,3 +1,5 @@
+var $header = $('header');
+
 $(document).ready(function() {
 
   function introFade() {
@@ -7,7 +9,6 @@ $(document).ready(function() {
   function parallax() {
     var scrolled = $(window).scrollTop();
     // Home
-    // $('#bg').css('top', -(scrolled * 2) + 'px');
     $('.intro').css('top', (scrolled / 5) + 'px');
     // Photo Site
     $('#image_a').css('top', (scrolled / 5) + 'px');
@@ -32,9 +33,9 @@ $(document).ready(function() {
   // Nav
   $(window).scroll(function() {
 		if ($(this).scrollTop() > 300) {
-			$('nav').fadeIn();
+			$header.fadeIn();
 		} else {
-			$('nav').fadeOut();
+			$header.fadeOut();
 		}
 		// Parallax
     parallax();
@@ -42,5 +43,8 @@ $(document).ready(function() {
 
   // Intro fade in
 	introFade();
+
+  // Initial hidden header
+  $header.hide();
 
 });
