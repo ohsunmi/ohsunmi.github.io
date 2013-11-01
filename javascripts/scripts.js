@@ -8,7 +8,7 @@ $(document).ready(function() {
     var scrolled = $(window).scrollTop();
     // Home
     $('#bg').css('top', -(scrolled * 2) + 'px');
-    $('.intro').css('top', (scrolled / 1.6) + 'px');
+    $('.intro').css('top', (scrolled / 5) + 'px');
     // Photo Site
     $('#image_a').css('top', (scrolled / 5) + 'px');
     $('#image_b').css('top', -(scrolled * 0.1) + 'px');
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   // Nav
   $(window).scroll(function() {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 300) {
 			$('nav').fadeIn();
 		} else {
 			$('nav').fadeOut();
