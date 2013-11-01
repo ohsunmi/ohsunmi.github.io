@@ -9,14 +9,9 @@
 		src: url('../fonts/Tuffy/Tuffy_Bold.ttf') format('truetype');
 }
 
-
 body {
-	margin-top: 60px;
-	background: url('../images/candy.jpg') no-repeat center fixed;
-/*		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;*/
+	/*background-color: #F0E8E8;*/
+	background-color: #E5E5E5;
 	text-align: center;
 	font-family: 'Tuffy', sans-serif;
 }
@@ -36,25 +31,84 @@ h3 {
 header {
 	width: 100%;
 	position: fixed;
+	background: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	z-index: 500;
+}
+
+section {
+	height: 1500px;
+}
+
+nav {
+	width: 390px;
+	height: 81px;
+	float: right;
+	z-index: 10;
+	display: none;
 }
 
 nav li {
 	float: right;
+	width: 70px;
 	padding: 30px;
 }
 
 nav li a:hover {
-	border-bottom: 2px solid #000000;
+	color: #D9D9D9;
 }
 
-#main {
-	width: 1240px;
-	margin: 0 auto;
+.border {
+	background-color: white;
+	position: fixed;
+	z-index: 1000;
+}
+
+#left {
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 16px;
+}
+
+#right {
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 16px;
+}
+
+#top {
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 16px;
+}
+
+#bottom {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 16px;
+}
+
+/******************************** HOME ********************************/
+
+#bg {
+	background: url('../images/jelly.jpg') no-repeat left;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	top: 0;
+	z-index: -2;
 }
 
 #home {
-	clear: both;
-	height: 400px;
+	height: 600px;
+	margin-bottom: 250px;
   color: black;
   text-shadow:
     -1px -1px 0 #FFFFFF,
@@ -63,32 +117,49 @@ nav li a:hover {
     1px 1px 0 #FFFFFF;
 }
 
-.wrapper {
-	padding: 120px;
+.intro {
+	padding: 150px;
+	margin-left: 130px;
+	top: 0;
+	position: relative;
+	z-index: -1;
+	display: none;
 }
 
 /******************************** WORK ********************************/
 
 .work_container {
-	padding-top: 250px;
+	margin-top: 500px;
+	padding-right: 100px;
+	text-align: right;
 }
 
-.work_box {
-	background-color: green;
-	width: 300px;
-	height: 160px;
-	margin: 5px;
-	float: left;
+.work_container img {
+	border: 3px solid #A8A8A8;
+	top: 0;
+	position: relative;
 }
 
-.work_box img {
-	border: 1px solid #C9C9C9;
+#image_b {
+	margin-right: 100px;
+}
+
+#image_c {
+	margin-right: 200px;
+}
+
+#image_f {
+	margin-right: -40px; 
+}
+
+#image_e {
+	margin-right: 100px;
 }
 
 /******************************** ABOUT ********************************/
 
 #about {
-	height: 400px;
+	height: 800px;
 	clear: both;
 }
 

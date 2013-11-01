@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
+	
+	<script id="project-view-template" type="text/x-handlebars-template">
+		<div class="work_images"><img {{image}} /></div>
+	</script>
+
+
 	<header>
 		<nav>
 			<li><a href="#contact">CONTACT</a></li>
@@ -15,28 +21,22 @@
 		</nav>
 	</header>
 
-<div id="main">
+	<div id="left" class="border"></div>
+	<div id="right" class="border"></div>
+	<div id="top" class="border"></div>
+	<div id="bottom" class="border"></div>
+
 	<section id="home">
-		<div class="wrapper">
+		<div id="bg"></div>
+		<div class="intro">
 			<h3>SUNMI OH</h3>
 			<p>full stack web developer with a black belt</p>
-		</div><!-- .wrapper -->
+		</div><!-- .intro -->
 	</section><!-- #home -->
 
 	<section id="work">
 		<div class="work_container">
-			<div class="work_box">
-				<img src="images/photo_site.jpg" />
-			</div>
-			<div class="work_box">
-				<img src="images/tmtotxt.jpg" />
-			</div>
-			<div class="work_box">
-				<img src="images/retwitr.jpg" />
-			</div>
-			<div class="work_box">
-				<img src="images/tomatotxt.jpg" />
-			</div>
+
 		</div><!-- .work_container -->
 	</section><!-- #work -->
 
@@ -62,6 +62,20 @@
 				<li><a href="">Email</a></li>
 		</div><!-- .contact_container -->
 	</section><!-- #contact -->
-</div><!-- #main -->
+
+
+	<script src="javascripts/jquery.js"></script>
+  <script src="javascripts/underscore.js"></script>
+  <script src="javascripts/backbone.js"></script>
+  <script src="javascripts/handlebars.js"></script>
+
+  <script src="javascripts/backbone/models/Project.js"></script>
+  <script src="javascripts/backbone/collections/Projects.js"></script>
+  <script src="javascripts/backbone/views/ProjectView.js"></script>
+  <script src="javascripts/backbone/routers/Router.js"></script>
+	<script src="javascripts/backbone/app.js"></script>
+
+  <script src="javascripts/scripts.js"></script>
+
 </body>
 </html>
