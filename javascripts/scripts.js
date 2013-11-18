@@ -1,15 +1,33 @@
-var $header = $('header');
+var $header = $('header'),
+    $intro = $('.intro'),
+    $arrow = $('#arrow');
 
 $(document).ready(function() {
 
   function introFade() {
-		$('.intro').delay(500).fadeIn(800);
+    $intro.delay(400).animate(
+      { opacity: 1, top: '10px' }, {
+        duration: 1000,
+        easing: 'swing'
+    });
+
+    $arrow.delay(1800).animate(
+      { opacity: 1, marginTop:'130px' }, {
+        duration: 1000,
+        easing: 'swing'
+    });
+
+    $arrow.animate(
+      { marginTop:'126px' }, {
+        duration: 550,
+        easing: 'swing'
+    });
 	}
 
   function parallax() {
     var scrolled = $(window).scrollTop();
     // Home
-    $('.intro').css('top', (scrolled / 5) + 'px');
+    $intro.css('top', (scrolled / 5) + 'px');
     // Photo Site
     $('#image_a').css('top', (scrolled / 5) + 'px');
     $('#image_b').css('top', -(scrolled * 0.1) + 'px');
@@ -41,10 +59,12 @@ $(document).ready(function() {
     parallax();
   });
 
+  // Initial hidden elements
+  $header.hide();
+  $intro.animate({ opacity: 0 }, 0);
+  $arrow.animate({ opacity: 0}, 0);
+
   // Intro fade in
 	introFade();
-
-  // Initial hidden header
-  $header.hide();
-
+  
 });

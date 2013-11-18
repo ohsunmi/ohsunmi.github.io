@@ -3,7 +3,7 @@ var app = app || {};
 app.ProjectView = Backbone.View.extend({
 
 	initialize: function() {
-		this.$list = $('.work_container');
+		this.$list = $('#work_container');
 	},
 
 	render: function() {
