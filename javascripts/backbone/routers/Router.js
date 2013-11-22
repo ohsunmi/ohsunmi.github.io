@@ -13,7 +13,9 @@ app.Router = Backbone.Router.extend({
 			new app.Project({image: 'id=image_c src=images/tomatotxt.jpg'}),
 			new app.Project({image: 'id=image_d src=images/tomatotxt_2.jpg'}),
 			new app.Project({image: 'id=image_e src=images/retwitr.jpg'}),
-			new app.Project({image: 'id=image_f src=images/retwitr_2.jpg'})
+			new app.Project({image: 'id=image_f src=images/retwitr_2.jpg'}),
+			new app.Project({image: 'id=image_g src=images/taskalot.jpg'}),
+			new app.Project({image: 'id=image_h src=images/taskalot_2.jpg'})
 		]);
 	},
 

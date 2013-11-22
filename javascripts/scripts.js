@@ -36,9 +36,13 @@ $(document).ready(function() {
     $('#image_d').css('top', -(scrolled * 0.05) + 'px');
     // Retwitr
     $('#image_e').css('top', (scrolled / 40) + 'px');
-    $('#image_f').css('top', -(scrolled  * 0.04) + 'px');
+    $('#image_f').css('top', -(scrolled  * 0.06) + 'px');
+    // TaskAlot
+    $('#image_g').css('top', (scrolled / 40) + 'px');
+    $('#image_h').css('top', -(scrolled  * 0.17) + 'px');
   }
 
+  // Easing scroll
   $(function() {
     $('nav li a').click(function(){
 			$('html, body').animate({
@@ -48,13 +52,26 @@ $(document).ready(function() {
 		});
 	});
 
+
+  var trigger = 4319;
+
   // Nav
   $(window).scroll(function() {
-		if ($(this).scrollTop() > 300) {
+    var y = $(this).scrollTop();
+    // Header fade in/out
+		if (y > 300) {
 			$header.fadeIn();
 		} else {
 			$header.fadeOut();
 		}
+
+    // Photo margin increase
+    //  if (y >= trigger) {
+    //   $("#photo").addClass('moretop');
+    // } else {
+    //   $("#photo").removeClass('moretop');
+    // }
+
 		// Parallax
     parallax();
   });
