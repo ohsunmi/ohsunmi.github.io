@@ -294,3 +294,13 @@ nav li a:hover {
 		margin-top: 600px;
 	}
 }
+
+
+#construction {
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 120px;
+	margin: 200px auto;
+	padding: 20px;
+	text-align: center;
+}
