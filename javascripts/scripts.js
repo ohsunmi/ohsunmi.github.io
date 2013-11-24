@@ -1,8 +1,16 @@
-var $header = $('header'),
-    $intro = $('.intro'),
-    $arrow = $('#arrow');
+var $header, $intro, $arrow, $descriptions, $info_a, $info_b, $info_c, $info_d;
+
 
 $(document).ready(function() {
+
+  var $header = $('header'),
+      $intro = $('.intro'),
+      $arrow = $('#arrow'),
+      $descriptions = $('.info'),
+      $info_a = $("#info_a"),
+      $info_b = $("#info_b"),
+      $info_c = $("#info_c"),
+      $info_d = $("#info_d");
 
   function introFade() {
     $intro.delay(400).animate(
@@ -22,7 +30,7 @@ $(document).ready(function() {
         duration: 550,
         easing: 'swing'
     });
-	}
+  }
 
   function parallax() {
     var scrolled = $(window).scrollTop();
@@ -53,11 +61,10 @@ $(document).ready(function() {
 	});
 
 
-  var trigger = 4319;
-
   // Nav
   $(window).scroll(function() {
     var y = $(this).scrollTop();
+
     // Header fade in/out
 		if (y > 300) {
 			$header.fadeIn();
@@ -65,12 +72,33 @@ $(document).ready(function() {
 			$header.fadeOut();
 		}
 
-    // Photo margin increase
-    //  if (y >= trigger) {
-    //   $("#photo").addClass('moretop');
-    // } else {
-    //   $("#photo").removeClass('moretop');
-    // }
+    // Info A fade in/out
+    if (y >= 980 && y <= 1370) {
+      $info_a.fadeIn();
+    } else {
+      $info_a.fadeOut();
+    }
+
+    // Info B fade in/out
+    if (y >= 1700 && y <= 1950) {
+      $info_b.fadeIn();
+    } else {
+      $info_b.fadeOut();
+    }
+
+     // Info C fade in/out
+    if (y >= 2150 && y <= 2350) {
+      $info_c.fadeIn();
+    } else {
+      $info_c.fadeOut();
+    }
+
+    // Info D fade in/out
+    if (y >= 2680 && y <= 3000) {
+      $info_d.fadeIn();
+    } else {
+      $info_d.fadeOut();
+    }
 
 		// Parallax
     parallax();
@@ -78,6 +106,7 @@ $(document).ready(function() {
 
   // Initial hidden elements
   $header.hide();
+  $descriptions.hide();
   $intro.animate({ opacity: 0 }, 0);
   $arrow.animate({ opacity: 0}, 0);
 
