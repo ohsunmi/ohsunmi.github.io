@@ -182,7 +182,7 @@ nav li a:hover {
 }
 
 .info {
-	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.9);
 	width: 300px;
 	margin: 200px 200px 230px 0;
 	float: right;
@@ -224,7 +224,7 @@ nav li a:hover {
 }
 
 #photo {
-	background: url('../images/popcorn3.jpg') no-repeat 0 -160px;
+	background: url('../images/popcorn.jpg') no-repeat 0 -160px;
 	background-size: 100%;
 	width: 296px;
 	height: 296px;
@@ -236,7 +236,7 @@ nav li a:hover {
 }
 
 #photo:hover {
-	background: url('../images/popcorn3.jpg') top no-repeat;
+	background: url('../images/popcorn.jpg') top no-repeat;
 	background-size: 100%;
 	-webkit-transition: background 1s ease;
 	-moz-transition: background 1s ease;
