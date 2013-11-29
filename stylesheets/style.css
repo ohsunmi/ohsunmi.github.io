@@ -195,6 +195,10 @@ nav li a:hover {
 	margin: 4px;
 }
 
+.info p:nth-of-type(2) {
+	font-size: 20px;
+}
+
 .info i:hover {
 	color: #D9D9D9;
 }
@@ -225,9 +229,18 @@ nav li a:hover {
 	padding: 10px 100px; 
 }
 
+#about_container p {
+	font-size: 20px;
+}
+
 #photo {
 	background: url('../images/popcorn.jpg') no-repeat 0 -160px;
 	background-size: 100%;
+	-webkit-transition: background 1s ease;
+	-moz-transition: background 1s ease;
+	-ms-transition: background 1s ease;
+	-o-transition: background 1s ease;
+	transition: background 1s ease;
 	width: 296px;
 	height: 296px;
 	margin: -30px auto 0;
