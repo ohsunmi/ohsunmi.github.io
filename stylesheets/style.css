@@ -225,7 +225,7 @@ nav li a:hover {
 
 #about {
 	height: 700px;
-	margin-top: 1200px;
+	margin-top: 1000px;
 }
 
 #about_container {
@@ -322,7 +322,7 @@ nav li a:hover {
 		height: 100%;
 	}
 	html {
-		overflow-y: scroll;
+		/*overflow-y: scroll;*/
 	}
 	body {
 		overflow-y: scroll;
@@ -337,6 +337,7 @@ nav li a:hover {
 
 	#work_container {
 		width: 90%;
+		margin-top: 609px;
 	}
 
 	#descriptions {
@@ -390,6 +391,11 @@ nav li a:hover {
 	#info_d {
 		margin-top: 250px; 
 	}
+
+	#about_container {
+		margin-top: -100px;
+	}
+
 }
 
 /******************************** UNDER CONSTRUCTION PAGE ********************************/

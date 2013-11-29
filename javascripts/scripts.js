@@ -72,36 +72,36 @@ $(document).ready(function() {
 			$header.fadeOut();
 		}
 
-    // Info A fade in/out
-    if (y >= 980 && y <= 1370) {
-      $info_a.fadeIn();
-    } else {
-      $info_a.fadeOut();
-    }
+    // // Info A fade in/out
+    // if (y >= 980 && y <= 1370) {
+    //   $info_a.fadeIn();
+    // } else {
+    //   $info_a.fadeOut();
+    // }
 
-    // Info B fade in/out
-    if (y >= 1700 && y <= 1950) {
-      $info_b.fadeIn();
-    } else {
-      $info_b.fadeOut();
-    }
+    // // Info B fade in/out
+    // if (y >= 1700 && y <= 1950) {
+    //   $info_b.fadeIn();
+    // } else {
+    //   $info_b.fadeOut();
+    // }
 
-     // Info C fade in/out
-    if (y >= 2150 && y <= 2350) {
-      $info_c.fadeIn();
-    } else {
-      $info_c.fadeOut();
-    }
+    //  // Info C fade in/out
+    // if (y >= 2150 && y <= 2350) {
+    //   $info_c.fadeIn();
+    // } else {
+    //   $info_c.fadeOut();
+    // }
 
-    // Info D fade in/out
-    if (y >= 2680 && y <= 3000) {
-      $info_d.fadeIn();
-    } else {
-      $info_d.fadeOut();
-    }
+    // // Info D fade in/out
+    // if (y >= 2680 && y <= 3000) {
+    //   $info_d.fadeIn();
+    // } else {
+    //   $info_d.fadeOut();
+    // }
 
 		// Parallax
-    parallax();
+    // parallax();
   });
 
   // Initial hidden elements
@@ -109,9 +109,42 @@ $(document).ready(function() {
   $intro.animate({ opacity: 0 }, 0);
   $arrow.animate({ opacity: 0}, 0);
 
-  // Not hidden on mobile
+  // Only computer screen
   if (screen.width > 1024) {
     $descriptions.hide();
+
+    $(window).scroll(function() {
+      var y = $(this).scrollTop();
+      parallax();
+
+      // Info A fade in/out
+      if (y >= 980 && y <= 1370) {
+        $info_a.fadeIn();
+      } else {
+        $info_a.fadeOut();
+      }
+
+      // Info B fade in/out
+      if (y >= 1700 && y <= 1950) {
+        $info_b.fadeIn();
+      } else {
+        $info_b.fadeOut();
+      }
+
+       // Info C fade in/out
+      if (y >= 2150 && y <= 2350) {
+        $info_c.fadeIn();
+      } else {
+        $info_c.fadeOut();
+      }
+
+      // Info D fade in/out
+      if (y >= 2680 && y <= 3000) {
+        $info_d.fadeIn();
+      } else {
+        $info_d.fadeOut();
+      }
+    });
   }
 
   // Intro fade in
