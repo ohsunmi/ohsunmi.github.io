@@ -1,8 +1,14 @@
 /******************************** GENERAL STYLES ********************************/
 
 @font-face {
-	font-family: 'Basic title'; 
-		src: url('../fonts/basictitlefont.ttf') format('truetype');
+  font-family: 'Basic title';
+  src: url('../fonts/basictitlefont-webfont.eot');
+  src: url('../fonts/basictitlefont-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basictitlefont-webfont.woff') format('woff'),
+       url('../fonts/basictitlefont-webfont.ttf') format('truetype'),
+       url('../fonts/basictitlefont-webfont.svg#basic_title_fontregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -310,7 +316,83 @@ nav li a:hover {
 	}
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
 
+	html, body {
+		height: 100%;
+	}
+	html {
+		overflow-y: scroll;
+	}
+	body {
+		overflow-y: scroll;
+		background: url('../images/jelly_small.jpg');
+	  background-size: 100% 100%;
+	}
+
+	h1, h2 {
+		font-size: 40px;
+		font-weight: normal;
+	}
+
+	#work_container {
+		width: 90%;
+	}
+
+	#descriptions {
+		width: 40%;
+	}
+
+	.work_images {
+		float: left;
+	}
+
+	.info {
+		margin: 0;
+	}
+
+	#image_b {
+		margin-top: -60px;
+	}
+
+	#image_d {
+		margin-top: -60px
+	}
+
+	#image_e {
+		margin-left: 20px;
+	}
+
+	#image_f {
+		margin-top: -80px
+	}
+
+	#image_g {
+		margin-top: 80px
+	}
+
+	#image_h {
+		margin-top: -80px
+	}
+
+	#info_a {
+		margin-top: 110px; 
+	}
+
+	#info_b {
+		margin-top: 260px; 
+	}
+
+	#info_c {
+		margin-top: 280px; 
+	}
+
+	#info_d {
+		margin-top: 250px; 
+	}
+}
+
+/******************************** UNDER CONSTRUCTION PAGE ********************************/
 
 #construction {
 	background-color: #FFFFFF;

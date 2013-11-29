@@ -106,9 +106,13 @@ $(document).ready(function() {
 
   // Initial hidden elements
   $header.hide();
-  $descriptions.hide();
   $intro.animate({ opacity: 0 }, 0);
   $arrow.animate({ opacity: 0}, 0);
+
+  // Not hidden on mobile
+  if (screen.width > 1024) {
+    $descriptions.hide();
+  }
 
   // Intro fade in
 	introFade();
