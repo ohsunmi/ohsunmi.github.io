@@ -321,11 +321,8 @@ nav li a:hover {
 	html, body {
 		height: 100%;
 	}
-	html {
-		/*overflow-y: scroll;*/
-	}
+
 	body {
-		overflow-y: scroll;
 		background: url('../images/jelly_small.jpg');
 	  background-size: 100% 100%;
 	}
@@ -341,7 +338,7 @@ nav li a:hover {
 
 	#work_container {
 		width: 90%;
-		margin-top: 609px;
+		margin-top: 610px;
 	}
 
 	#descriptions {
@@ -356,12 +353,18 @@ nav li a:hover {
 		margin: 0;
 	}
 
+	#image_a {
+		margin-top: 90px;
+	}
+
 	#image_b {
 		margin-top: -60px;
+		margin-bottom: 120px;
 	}
 
 	#image_d {
-		margin-top: -60px
+		margin-top: -60px;
+		margin-bottom: 200px;
 	}
 
 	#image_e {
@@ -369,7 +372,8 @@ nav li a:hover {
 	}
 
 	#image_f {
-		margin-top: -80px
+		margin-top: -80px;
+		margin-bottom: 200px;
 	}
 
 	#image_g {
@@ -381,23 +385,26 @@ nav li a:hover {
 	}
 
 	#info_a {
-		margin-top: 110px; 
+		margin-top: 110px;
+		margin-bottom: 200px;
 	}
 
 	#info_b {
-		margin-top: 560px; 
+		margin-top: 260px; 
+		margin-bottom: 200px;
 	}
 
 	#info_c {
-		margin-top: 1000px; 
+		margin-top: 280px; 
+		margin-bottom: 200px;
 	}
 
 	#info_d {
-		margin-top: 1500px; 
+		margin-top: 250px; 
 	}
 
 	#about_container {
-		margin-top: -100px;
+		margin-top: 1500px;
 	}
 
 }
