@@ -60,7 +60,6 @@ $(document).ready(function() {
 		});
 	});
 
-
   // Nav
   $(window).scroll(function() {
     var y = $(this).scrollTop();
