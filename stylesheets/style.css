@@ -232,7 +232,7 @@ nav li a:hover {
 	background-color: #FFFFFF;
 	width: 50%;
 	margin: 0 auto;
-	padding: 10px 100px; 
+	padding: 10px 100px 30px; 
 }
 
 #about_container p {
@@ -335,6 +335,10 @@ nav li a:hover {
 		font-weight: normal;
 	}
 
+	h2 {
+		margin-top: 14px;
+	}
+
 	#work_container {
 		width: 90%;
 		margin-top: 609px;
@@ -381,15 +385,15 @@ nav li a:hover {
 	}
 
 	#info_b {
-		margin-top: 260px; 
+		margin-top: 560px; 
 	}
 
 	#info_c {
-		margin-top: 280px; 
+		margin-top: 1000px; 
 	}
 
 	#info_d {
-		margin-top: 250px; 
+		margin-top: 1500px; 
 	}
 
 	#about_container {
