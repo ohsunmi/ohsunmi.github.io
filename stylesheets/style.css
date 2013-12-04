@@ -318,13 +318,8 @@ nav li a:hover {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
 
-	html, body {
-		height: 100%;
-	}
-
 	body {
-		background: url('../images/jelly_small.jpg');
-	  background-size: 100% 100%;
+		background: url('../images/binding_dark.png');
 	}
 
 	h1, h2 {
@@ -338,7 +333,7 @@ nav li a:hover {
 
 	#work_container {
 		width: 90%;
-		margin-top: 610px;
+/*		margin-top: 110px;*/
 	}
 
 	#descriptions {
@@ -404,7 +399,7 @@ nav li a:hover {
 	}
 
 	#about_container {
-		margin-top: 1500px;
+		margin-top: 1300px;
 	}
 
 }
