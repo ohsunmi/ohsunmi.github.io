@@ -76,7 +76,7 @@ $(document).ready(function() {
   $intro.animate({ opacity: 0 }, 0);
   $arrow.animate({ opacity: 0}, 0);
 
-  // Only computer screen
+  // Only desktop
   if (screen.width > 1024) {
     $descriptions.hide();
 
