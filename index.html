@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<title>Sunmi Oh</title>
-	
 	<link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
 
@@ -19,17 +19,11 @@
 	</script>
 </head>
 <body>
-	
-	<script id="project-view-template" type="text/x-handlebars-template">
-		<div class="work_images"><img {{image}} /></div>
-	</script>
-
-
 	<header>
 		<nav>
-			<li><a href="#contact">CONTACT</a></li>
-			<li><a href="#about">ABOUT</a></li>
 			<li><a href="#work">WORK</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
 		</nav>
 	</header>
 
@@ -39,70 +33,94 @@
 	<div id="bottom" class="border"></div>
 
 	<section id="home">
-		<div class="intro box_shadow">
+		<div class="intro">
 			<h1>SUNMI OH</h1>
-			<p>full stack web developer</p>
+			<p>FULL STACK WEB DEVELOPER</p>
 		</div><!-- .intro -->
-
+		<div id="intro_photo">
+			<p>photo</p>
+		</div><!-- #intro_photo -->
 		<div id="arrow">
-			<i class="fa fa-chevron-down fa-3x"></i>
-		</div>
+			<a href="#work"><i class="fa fa-chevron-down fa-3x"></i></a>
+		</div><!-- #arrow -->
 	</section><!-- #home -->
 
 	<section id="work">
 		<div id="work_container">
-			<div id="descriptions">
-				<div id="info_a" class="info box_shadow">
-					<p>My first project: a photography site that I built during my front-end web development class.
-						<br>
-						<a href="http://studio.generalassemb.ly/FEWD14/sunmioh/JennaKaplanPhotography/index.html" target="_blank"><i class="fa fa-angle-double-right"></i></a>
-					</p>
+			<div id="project_a" class="projects">
+				<div class="info box_shadow">
+					<p><span>JENNA KAPLAN PHOTOGRAPHY</span></p>
+					<p><a href="http://studio.generalassemb.ly/FEWD14/sunmioh/JennaKaplanPhotography/index.html" target="_blank"><i class="fa fa-angle-double-right"></i></a></p>
 					<p>HTML5. CSS3. <br>jQuery Fancybox.</p>
-				</div>
-				<div id="info_b" class="info box_shadow">
-					<p>Tomatotxt is a web app that brings you curated movie recommendations via text message.
-						<br>
-						<a href="http://tmtotxt.herokuapp.com/" target="_blank"><i class="fa fa-angle-double-right"></i></a>
-					</p>
+				</div><!-- .info -->
+				<div id="photo_a" class="photos">
+					<img class="box_shadow" src="images/photosite.jpg">
+					<img class="box_shadow" src="images/photosite_2.jpg">
+				</div><!-- #photo_a -->
+			</div><!-- #project_a -->
+			<div id="project_b" class="projects">
+				<div class="info box_shadow">
+					<p><span>TOMATOTXT</span> is a web app that brings you curated movie recommendations via text message.</p>
+					<p><a href="http://tmtotxt.herokuapp.com/" target="_blank"><i class="fa fa-angle-double-right"></i></a></p>
 					<p>Rails 3. PostgreSQL. Devise. Twilio. RottenTomatoes API. OMDbAPI. TheMovieDB API</p>
-				</div>
-				<div id="info_c" class="info box_shadow">
-					<p>Retwitr provides the top three most popular and liked tweets of any twitter handle.
-						<br>
-						<a href="http://retwitr.herokuapp.com" target="_blank"><i class="fa fa-angle-double-right"></i></a>
-					</p>
+				</div><!-- .info -->
+				<div id="photo_b" class="photos">
+					<img class="box_shadow" src="images/tomatotxt.jpg">
+					<img class="box_shadow" src="images/tomatotxt_2.jpg">
+				</div><!-- #photo_b -->
+			</div><!-- #project_b -->
+			<div id="project_c" class="projects">
+				<div class="info box_shadow">
+					<p><span>RETWITR</span> provides the most popular and liked tweets of any twitter handle.</p>
+					<p><a href="http://retwitr.herokuapp.com" target="_blank"><i class="fa fa-angle-double-right"></i></a></p>
 					<p>Rails 3. PostgreSQL. Devise. OmniAuth. Twitter API.</p>
-				</div>
-				<div id="info_d" class="info box_shadow">
-					<p>TaskAlot manages your group's tasks and chores through instant task allocation and acceptance. 
-						<br>
-						<a href="http://taskalotsplash.herokuapp.com/" target="_blank"><i class="fa fa-angle-double-right"></i></a>
-					</p>
-					<p>Rails 4. PostgreSQL. Devise. SendGrid. Twilio.</p>
-				</div>
-			</div><!-- #descriptions -->
+				</div><!-- .info -->
+				<div id="photo_c" class="photos">
+					<img class="box_shadow" src="images/retwitr.jpg">
+					<img class="box_shadow" src="images/retwitr_2.jpg">
+				</div><!-- #photo_c -->
+			</div><!-- #project_c -->
 		</div><!-- .work_container -->
+
+		<div id="work_mobile">
+			<div id="project_1" class="project_mobile">
+				<div class="info_mobile">	
+					<p>JENNA KAPLAN PHOTOGRAPHY</p>
+					<p><a href="http://studio.generalassemb.ly/FEWD14/sunmioh/JennaKaplanPhotography/index.html" target="_blank"><i class="fa fa-angle-double-right"></i></a>
+					<p>HTML5. CSS3. <br>jQuery Fancybox.</p>
+				</div><!-- .info_mobile -->
+			</div><!-- #project_1 -->
+			<div id="project_2" class="project_mobile">
+				<div class="info_mobile">
+					<p>TOMATOTXT</p>
+					<p><a href="http://tmtotxt.herokuapp.com/" target="_blank"><i class="fa fa-angle-double-right"></i></a></p>
+					<p>Rails 3. PostgreSQL. Devise. <br> Twilio. RottenTomatoes API. OMDbAPI. TheMovieDB API</p>
+				</div><!-- .info_mobile -->
+			</div><!-- #project_2 -->
+			<div id="project_3" class="project_mobile">
+				<div class="info_mobile">	
+					<p>RETWITR</p>
+					<p><a href="http://retwitr.herokuapp.com" target="_blank"><i class="fa fa-angle-double-right"></i></a></p>
+					<p>Rails 3. PostgreSQL. Devise. <br> OmniAuth. Twitter API.</p>
+				</div><!-- .info_mobile -->
+			</div><!-- #project_3 -->
+		</div><!-- #work_mobile -->
 	</section><!-- #work -->
 
 	<section id="about">
 		<div id="about_container" class="box_shadow">
-			<h2>About</h2>
-			<p>Taking a front-end web development course at General Assembly, I was able to quickly translate my creative ideas to the screen.  However, I recognized the limitations I faced in creating something at a larger scale - so, I dove straight into an immersive full-stack web development program.</p>
-
-			<p>Through the program, I became more experienced with front-end development as well as back-end technologies including Ruby on Rails, JavaScript, jQuery, Backbone, PostgreSQL, and various testing tools.  I had the opportunity to learn from several talented, highly knowledgeable instructors and work among peers who were equally as awesome.</p>
-
-			<p>I love creating things on the web and am eager to learn and expand my skills to no end.</p>
+			<h2>ABOUT</h2>
+			<p>Learning front-end development, I was able to quickly translate my creative ideas to the screen. However, I recognized the limitations I faced in creating something at a larger scale - so, I dove straight into an immersive full-stack web development program.</p>
+			<p>I became more experienced with front-end development as well as back-end technologies. Check out my <a href="images/resume.pdf" target="_blank">resume</a> cause I'd love to work with you.</p>
 		</div><!-- .about_container -->
-
 		<div id="photo">
 			<p>photo</p>
 		</div><!-- #photo -->
 	</section><!-- #about -->
 
-
 	<section id="contact">
 		<div id="contact_container">
-			<h2>Contact</h2>
+			<h3>CONTACT</h3>
 			<div id="icons">
 				<li><a href="http://www.linkedin.com/profile/view?id=249118235&trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="https://github.com/ohsunmi" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -112,19 +130,8 @@
 		</div><!-- .contact_container -->
 	</section><!-- #contact -->
 
-
 	<script src="javascripts/jquery.js"></script>
 	<script src="javascripts/jquery_easing.js"></script>
-  <script src="javascripts/underscore.js"></script>
-  <script src="javascripts/backbone.js"></script>
-  <script src="javascripts/handlebars.js"></script>
-
-  <script src="javascripts/backbone/models/Project.js"></script>
-  <script src="javascripts/backbone/collections/Projects.js"></script>
-  <script src="javascripts/backbone/views/ProjectView.js"></script>
-  <script src="javascripts/backbone/routers/Router.js"></script>
-	<script src="javascripts/backbone/app.js"></script>
-
   <script src="javascripts/scripts.js"></script>
 
 </body>

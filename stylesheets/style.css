@@ -1,26 +1,33 @@
 /******************************** GENERAL STYLES ********************************/
 
 @font-face {
-  font-family: 'Basic title';
-  src: url('../fonts/basictitlefont-webfont.eot');
-  src: url('../fonts/basictitlefont-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/basictitlefont-webfont.woff') format('woff'),
-       url('../fonts/basictitlefont-webfont.ttf') format('truetype'),
-       url('../fonts/basictitlefont-webfont.svg#basic_title_fontregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Novecentosanswide-Bold';
+    src: url('../fonts/novecento_sans_wide_bold-webfont.eot');
+    src: url('../fonts/novecento_sans_wide_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/novecento_sans_wide_bold-webfont.woff') format('woff'),
+         url('../fonts/novecento_sans_wide_bold-webfont.ttf') format('truetype'),
+         url('../fonts/novecento_sans_wide_bold-webfont.svg#novecento_sans_wide_bookbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecentosanswide-Light';
+    src: url('../fonts/novecento_sans_wide_light-webfont.eot');
+    src: url('../fonts/novecento_sans_wide_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/novecento_sans_wide_light-webfont.woff') format('woff'),
+         url('../fonts/novecento_sans_wide_light-webfont.ttf') format('truetype'),
+         url('../fonts/novecento_sans_wide_light-webfont.svg#novecento_sans_widelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-	background: url('../images/jelly.jpg') no-repeat center center fixed;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	background-color: #E5E5E5;
+	background: linear-gradient(to right,rgba(54,186,194,0.97) 0,rgba(60,211,173,0.97) 100%);
 	text-align: center;
-	font-family: 'Basic title', sans-serif;
-	font-size: 24px;
+	font-family: 'Novecentosanswide-Light', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
 }
 
 a {
@@ -32,38 +39,55 @@ ul, li {
 	list-style: none;
 }
 
+h1, h2, h3 {
+	font-family: 'Novecentosanswide-Bold', sans-serif;
+	font-weight: 700;
+}
+
 h1 {
-	font-size: 62px;
+	font-size: 80px;
+	margin-top: 62px;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 42px;
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+i {
+	color: #FFF;
+}
+
+span {
+	font-family: 'Novecentosanswide-Bold', sans-serif;
 }
 
 header {
 	background: #FFFFFF;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-		-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-		-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	width: 100%;
 	top: 0;
 	position: fixed;
 	z-index: 500;
 }
 
-section {
-	height: 1500px;
-}
-
 nav {
-	height: 81px;
-	width: 390px;
-	padding-right: 50px;
+	height: 87px;
+	width: 446px;
 	float: right;
 	z-index: 10;
 }
 
 nav li {
-	font-size: 26px;
-	width: 70px;
-	padding: 30px;
-	float: right;
+	font-size: 20px;
+	padding: 30px 36px;
+	float: left;
 }
 
 nav li a:hover {
@@ -105,138 +129,154 @@ nav li a:hover {
 }
 
 .box_shadow {
-	box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
-		-webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 /******************************** HOME ********************************/
 
 #home {
+	color: #000000;
 	height: 600px;
+	margin-top: -42px;
 	margin-bottom: 250px;
-  color: #000000;
+}
+
+#intro_photo {
+	background: url('../images/popcorn.jpg') no-repeat -22px -80px;
+	background-size: 150%;
+	width: 100px;
+	height: 100px;
+	margin: -50px auto 0;
+	border-radius: 50%;
+	border: 4px solid #FFF;
+	text-indent: -9999em;
+	position: relative;
 }
 
 .intro {
-	background-color: #FFFFFF;
-	width: 400px;
-	margin: 200px auto 0;
-	padding: 80px;
-	position: relative;
+	background-color: #FFF;	
+	width: 100%;
+	height: 50%;
+	padding-top: 100px;
 	top: 0;
+	position: relative;
 	z-index: -1;
 }
 
+.intro p{
+	color: #5E5E5E;
+	font-size: 23px;
+	margin-top: 0;
+}
+
 #arrow {
-	margin-top: 120px;
+	margin-top: 60px;
+}
+
+#arrow i {
 	color: rgba(0, 0, 0, 0.4);
 }
 
 /******************************** WORK ********************************/
 
 #work {
-	margin: 500px auto;
+	height: 1800px;
+	padding-top: 150px;
 }
 
-#work_container {
-	padding-left: 100px; 
-	text-align: left;
+#work_mobile {
+	display: none;
 }
 
-#work_container img {
-	border: 3px solid #A8A8A8;
+.projects {
+	width: 709px;
+	height: 437px;
+	margin: 40px auto 150px;
+	left: 150px;
 	position: relative;
-	top: 0;
 }
 
-#image_a {
-	margin-left: -20px;
+.photos {
+	width: 406px;
+	height: 428px;
+	position: relative;
 }
 
-#image_b {
-	margin-left: 100px;
+.photos img {
+	float: left;
 }
 
-#image_c {
-	margin-left: 20px;
-	margin-top: 100px;
-}
-
-#image_d {
-	margin-left: 120px;
-	margin-top: 50px;
-}
-
-#image_e {
-	margin-left: -30px;
-	margin-top: 80px;
-}
-
-#image_f {
-	margin-left: 120px; 
-	margin-top: 50px;
-}
-
-#image_h {
-	margin-left: 100px;
-	margin-top: 400px;
-}
-
-#descriptions {
-	width: 320px;
-	float: right;
+.photos img:last-child {
+	margin-top: 10px;
 }
 
 .info {
-	background-color: rgba(255, 255, 255, 0.9);
-	width: 300px;
-	margin: 200px 200px 230px 0;
-	padding: 2px;
+	background: #FFF;
+	color: #000;
+	width: 249px;
+	height: 428px;
+	margin-top: 20px;
+	padding: 0 30px;
+	left: -290px;
 	float: right;
 	position: relative;
-	text-align: center;
 }
 
-.info p {
-	margin: 4px;
+#project_a .info {
+	height: 332px;
+	padding-top: 98px;
 }
 
-.info p:nth-of-type(2) {
+#project_b .info {
+	height: 378px;
+	padding-top: 52px;
+}
+
+#project_c .info {
+	height: 357px;
+	padding-top: 74px;
+}
+
+.info p:first-child {
+	font-family: 'Novecentosanswide-Light', sans-serif;
 	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.info i {
+	height: 33px;
+	color: #000;
 }
 
 .info i:hover {
 	color: #D9D9D9;
 }
 
-#info_b {
-	margin-top: 760px
-}
-
-#info_c {
-	margin-top: 1250px
-}
-
-#info_d {
-	margin-top: 1750px
-}
-
 /******************************** ABOUT ********************************/
 
 #about {
 	height: 700px;
-	margin-top: 1000px;
+	padding-top: 120px;
 }
 
 #about_container {
 	background-color: #FFFFFF;
 	width: 50%;
 	margin: 0 auto;
-	padding: 10px 100px 30px; 
+	padding: 15px 100px 30px; 
 }
 
-#about_container p {
-	font-size: 20px;
+#about_container p:last-child a {
+	text-decoration: underline;
+}
+
+#about_container p:last-child a:hover{
+	background: #000;
+	color: #FFF;
+	text-decoration: none;
 }
 
 #photo {
@@ -251,7 +291,7 @@ nav li a:hover {
 	height: 296px;
 	margin: -30px auto 0;
 	border-radius: 50%;
-	border: 4px solid #FFFFFF;
+	border: 4px solid #7A7A7A;
 	text-indent: -9999em;
 	position: relative;
 }
@@ -269,10 +309,10 @@ nav li a:hover {
 /******************************** CONTACT ********************************/
 
 #contact {
-	height: 200px;
-	margin-top: 250px;
-	color: #FFFFFF;
 	background-color: #000000;
+	color: #FFFFFF;
+	height: 200px;
+	margin-top: 50px;
 }
 
 #contact_container {
@@ -284,16 +324,9 @@ nav li a:hover {
 
 #icons {
 	width: 200px;
+	height: 24px;
 	margin: 0 auto;
 	position: relative;
-}
-
-#icons a {
-	color: #FFFFFF;
-}
-
-#icons a:hover {
-	color: #D9D9D9;
 }
 
 #icons li {
@@ -301,116 +334,115 @@ nav li a:hover {
 	float: left;
 }
 
+#icons i {
+	font-size: 24px;
+}
+
+#icons i:hover {
+	color: #BABABA;
+}
+
 /******************************** MEDIA QUERIES ********************************/
 
-@media only screen and (max-width: 1150px) {
-	#work_container {
-		width: 1100px;
-		padding-left: 40px;
+@media only screen and (max-width: 977px) {
+	.projects {
+		position: inherit;
 	}
 }
 
-@media only screen and (max-width: 620px) {
-	#contact {
-		margin-top: 600px;
+@media only screen and (max-width: 800px){
+	#work_container {
+		display: none;
+	}
+
+	#work_mobile {
+		width: 506px;
+		margin: 0 auto;
+		display: inline;
+	}
+
+	#project_1 {
+		background: url("../images/photosite.jpg") no-repeat center;
+	}
+	#project_2 {
+		background: url("../images/tomatotxt.jpg") no-repeat center;
+	}
+	#project_3 {
+		background: url("../images/retwitr.jpg") no-repeat center;
+	}
+
+	.project_mobile {
+		width: 406px;
+		height: 220px;
+		margin: 150px auto;
+		border: 3px solid #FFF;
+	}
+
+	.info_mobile {
+		background: rgba(0,0,0,0.6);
+		color: #FFF;
+		width: 250px;
+		height: 160px;
+		margin: 20px auto;
+		padding: 10px 30px;
+		display: none;
+	}
+
+	.info_mobile p:first-child {
+		font-family: 'Novecentosanswide-Bold', sans-serif;
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
-
-	body {
-		background: #E5E5E5;
-	}
-
-	h1, h2 {
-		font-size: 40px;
-		font-weight: normal;
-	}
-
-	h2 {
-		margin-top: 14px;
-	}
-
-	#work_container {
-		width: 90%;
-/*		margin-top: 110px;*/
-	}
-
-	#descriptions {
-		width: 40%;
-	}
-
-	.work_images {
-		float: left;
-	}
-
-	.info {
-		margin: 0;
-	}
-
-	#image_a {
-		margin-top: 90px;
-	}
-
-	#image_b {
-		margin-top: -60px;
-		margin-bottom: 120px;
-	}
-
-	#image_d {
-		margin-top: -60px;
-		margin-bottom: 200px;
-	}
-
-	#image_e {
-		margin-left: 20px;
-	}
-
-	#image_f {
-		margin-top: -80px;
-		margin-bottom: 200px;
-	}
-
-	#image_g {
-		margin-top: 80px
-	}
-
-	#image_h {
-		margin-top: -80px
-	}
-
-	#info_a {
-		margin-top: 180px;
-		margin-bottom: 200px;
-	}
-
-	#info_b {
-		margin-top: 260px; 
-		margin-bottom: 200px;
-	}
-
-	#info_c {
-		margin-top: 280px; 
-		margin-bottom: 200px;
-	}
-
-	#info_d {
-		margin-top: 250px; 
+@media only screen and (max-width: 600px){
+	nav {
+		margin: 0 auto;
+		float: none;
 	}
 
 	#about_container {
-		margin-top: 1300px;
+		padding: 15px 50px 30px;
 	}
 
+	#contact {
+		margin-top: 170px;
+	}
 }
 
-/******************************** UNDER CONSTRUCTION PAGE ********************************/
+@media only screen and (max-width: 480px){
+	html {
+		width: 480px;
+	}
+}
 
-#construction {
-	background-color: #FFFFFF;
-	width: 300px;
-	height: 120px;
-	margin: 200px auto;
-	padding: 20px;
-	text-align: center;
+/*mobile*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+	html {
+		width: 568px;
+	}
+
+	nav {
+		width: 443px;
+		margin: 0 auto;
+	}
+
+	#work {
+		height: 1300px;
+	}
+
+	#about_container {
+		padding: 10px 70px;
+	}
+
+	#photo {
+		margin-top: -20px;
+	}
+}
+
+/*ipad*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	html {
+		width: 1024px;
+	}
 }
